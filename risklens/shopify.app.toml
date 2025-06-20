@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "720aa566f679f3be968581533fabcb06"
+name = "risklens"
+handle = "risklens"
+application_url = "https://supplies-translate-wm-eligible.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-04"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = ["https://supplies-translate-wm-eligible.trycloudflare.com/auth/callback", "https://supplies-translate-wm-eligible.trycloudflare.com/auth/shopify/callback", "https://supplies-translate-wm-eligible.trycloudflare.com/api/auth/callback"]
+
+[pos]
+embedded = false
